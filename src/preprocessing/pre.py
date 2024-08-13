@@ -2,7 +2,7 @@ import pandas as pd
 
 path = "data/"
 
-df = pd.read_csv(path + "geracao_solar.csv", sep=';')
+df = pd.read_csv(path + "Temporal Geração de Energia.csv", sep=';')
 
 
 
@@ -12,4 +12,4 @@ df = pd.read_csv(path + "geracao_solar.csv", sep=';')
 # df['month'] = df['month'].replace(string_to_number)
 
 
-print(df[['month', 'year']].tail())
+print(df.tail())
