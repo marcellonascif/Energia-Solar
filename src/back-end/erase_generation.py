@@ -21,7 +21,7 @@ df.rename(columns={"Unnamed: 0": "id"}, inplace=True)
 
 df["data"] = pd.to_datetime(df["data"], format="%Y-%m-%d")
 
-df = erase(df, "geracao", 20)
+df = erase(df, "geracao", len(df) // 10)
 
 print(df.info())
 
