@@ -1,5 +1,6 @@
 # Ignoring virtual environment
 venv/
 env/
+
 # Ignoring data
 data/

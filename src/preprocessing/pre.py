@@ -10,7 +10,7 @@ df["data"] = pd.to_datetime(df["data"], format="%d/%m/%Y")
 
 df["geracao"] = df["geracao"].str.replace(",", ".").astype(float)
 
-df.to_csv(path + "geracao_solar.csv", sep=';', index=True)
+df.to_csv(path + "geracao_solar.csv", sep=";", index=True, encoding="utf-8")
 
 print(df.info())
 print(df.tail(5))

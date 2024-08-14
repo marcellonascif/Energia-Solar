@@ -21,6 +21,8 @@ df.rename(columns={"Unnamed: 0": "id"}, inplace=True)
 
 df["data"] = pd.to_datetime(df["data"], format="%Y-%m-%d")
 
-df = erase(df, "geracao", 5)
+df = erase(df, "geracao", 20)
 
 print(df.info())
+
+df.to_csv(path + "geracao_solar_faltante.csv", sep=";", index=False, encoding="utf-8")
